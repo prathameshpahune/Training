@@ -30,7 +30,6 @@ batch_size = 5
 for i in range(lst):
     if i <= 5:
         print(i)
-"""
 
 def process_data_in_batch(data, batch_size):
     data_size = len(data)
@@ -44,4 +43,26 @@ data = list(range(430))
 process_data_in_batch(data,50)
 
 
+from datetime import datetime
+
+now = datetime.now()
+
+year = now.year
+month = now.month
+day = now.day
+
+print(f"{now}{year}{month}{day}")
+
+
+from datetime import date
+
+today = datetime.now()
+print(today)
+"""
+from datetime import timedelta
+now = datetime.now()
+
+print(f"Tomorrow: {now + timedelta(weeks=3)}")
+print(f"Tomorrow: {now + timedelta(hours=3)}")
+print(f"Tomorrow: {now + timedelta(days=3)}")
 
